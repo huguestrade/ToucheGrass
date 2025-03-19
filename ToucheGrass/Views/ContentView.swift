@@ -6,19 +6,22 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ContentView: View {
+    
+    var data: [AppModel]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Chart(data) {
+                
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(data: AppModel.testData)
 }

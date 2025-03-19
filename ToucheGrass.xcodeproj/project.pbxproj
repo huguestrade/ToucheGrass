@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B771A5972D801AA5009001CB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771A5962D801AA5009001CB /* AppModel.swift */; };
+		B771A59C2D802034009001CB /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771A59B2D802034009001CB /* RowView.swift */; };
+		B771A59E2D802BBD009001CB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771A59D2D802BBD009001CB /* ListView.swift */; };
 		B7AAF5FB2D64735B001895E7 /* ToucheGrassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AAF5FA2D64735B001895E7 /* ToucheGrassApp.swift */; };
 		B7AAF5FD2D64735B001895E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AAF5FC2D64735B001895E7 /* ContentView.swift */; };
 		B7AAF5FF2D64735C001895E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AAF5FE2D64735C001895E7 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B771A5962D801AA5009001CB /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B771A59B2D802034009001CB /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		B771A59D2D802BBD009001CB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B7AAF5F72D64735B001895E7 /* ToucheGrass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToucheGrass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AAF5FA2D64735B001895E7 /* ToucheGrassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToucheGrassApp.swift; sourceTree = "<group>"; };
 		B7AAF5FC2D64735B001895E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B771A5942D801A6C009001CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7AAF5FC2D64735B001895E7 /* ContentView.swift */,
+				B771A59B2D802034009001CB /* RowView.swift */,
+				B771A59D2D802BBD009001CB /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B771A5952D801A76009001CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B771A5962D801AA5009001CB /* AppModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B7AAF5EE2D64735B001895E7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +75,10 @@
 		B7AAF5F92D64735B001895E7 /* ToucheGrass */ = {
 			isa = PBXGroup;
 			children = (
-				B7AAF5FA2D64735B001895E7 /* ToucheGrassApp.swift */,
-				B7AAF5FC2D64735B001895E7 /* ContentView.swift */,
 				B7AAF5FE2D64735C001895E7 /* Assets.xcassets */,
+				B771A5952D801A76009001CB /* Models */,
+				B771A5942D801A6C009001CB /* Views */,
+				B7AAF5FA2D64735B001895E7 /* ToucheGrassApp.swift */,
 				B7AAF6002D64735C001895E7 /* Preview Content */,
 			);
 			path = ToucheGrass;
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B771A5972D801AA5009001CB /* AppModel.swift in Sources */,
 				B7AAF5FD2D64735B001895E7 /* ContentView.swift in Sources */,
+				B771A59E2D802BBD009001CB /* ListView.swift in Sources */,
 				B7AAF5FB2D64735B001895E7 /* ToucheGrassApp.swift in Sources */,
+				B771A59C2D802034009001CB /* RowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

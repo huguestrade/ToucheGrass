@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ListView: View {
+    
+    var data: [AppModel]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Application Time")
+            List {
+                ForEach(data) {app in RowView(app: app)}
+            }
+            .listStyle(PlainListStyle())
+        }
     }
 }
 
 #Preview {
-    ListView()
+    ListView(data: AppModel.testData)
 }

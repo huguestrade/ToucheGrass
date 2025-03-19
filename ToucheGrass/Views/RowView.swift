@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct RowView: View {
+    
+    var useTimeMin: String
+    var useTimeHour: String
+    
+    let app: AppModel
+
+    init(app: AppModel) {
+        self.app = app
+        useTimeMin = String(format: "%.2d", app.useTime % 60)
+        useTimeHour = String(app.useTime / 60)
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Image(app.iconName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 60)
+                .cornerRadius(15)
+            Text(app.name)
+            Spacer()
+            Text("\(useTimeHour)h\(useTimeMin)")
+        }
+        .font(.title2)
+        .padding(.vertical, 10)
     }
 }
 
 #Preview {
-    RowView()
+    RowView(app: AppModel.testData[0])
 }
