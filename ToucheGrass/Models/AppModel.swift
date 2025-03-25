@@ -30,3 +30,6 @@ struct AppModel: Identifiable {
                            AppModel(name: "horloge", useTime: 65, iconName: "icon_clock", category: .outil),
                            AppModel(name: "news", useTime: 320, iconName: "icon_news", category: .divertissement)]
 }
+
+
+
