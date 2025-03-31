@@ -25,15 +25,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Chart(categoryTime) { categorie in
+            Chart(Array(categoryTime), id: \.key) {key, value in
                 SectorMark(
-                    angle: .value(
-                        "Time",
-                        categorie.value
+                    angle: .value("Time", value),
+                    innerRadius: .ratio(0.8),
+                    outerRadius: .ratio(0.9),
+                    angularInset: 5
                     )
-                )
                 .foregroundStyle(
-                    by: .value("category", categorie.key)
+                    by: .value("category", key)
                 )
             }
             

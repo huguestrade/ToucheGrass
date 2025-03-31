@@ -38,6 +38,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B76CBD5D2D9AA4D500903E05 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		B771A5942D801A6C009001CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +82,7 @@
 		B7AAF5F92D64735B001895E7 /* ToucheGrass */ = {
 			isa = PBXGroup;
 			children = (
+				B76CBD5D2D9AA4D500903E05 /* ViewModels */,
 				B7AAF5FE2D64735C001895E7 /* Assets.xcassets */,
 				B771A5952D801A76009001CB /* Models */,
 				B771A5942D801A6C009001CB /* Views */,
