@@ -14,7 +14,7 @@ enum Category: String, CaseIterable{
     case divertissement = "divertissement"
 }
 
-struct AppModel: Identifiable {
+struct AppModel: Identifiable, Comparable {
     var id = UUID()
     var name: String
     var useTime: Int
@@ -31,6 +31,10 @@ struct AppModel: Identifiable {
        AppModel(name: "horloge", useTime: 65, iconName: "icon_clock", category: .outil),
        AppModel(name: "news", useTime: 320, iconName: "icon_news", category: .divertissement)
     ]
+    
+    static func <(lhs: AppModel, rhs: AppModel) -> Bool {
+        lhs.useTime > rhs.useTime
+    }
 }
 
 

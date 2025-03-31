@@ -11,7 +11,7 @@ import SwiftUI
 struct ToucheGrassApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(data: AppModel.testData)
+            ChartView(data: AppModel.testData)
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ChartView.swift
 //  ToucheGrass
 //
 //  Created by estrade hugues on 18/02/2025.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-struct ContentView: View {
+struct ChartView: View {
     @State var categoryTime: Dictionary<String, Int> = [:]
     
     func groupByCategoryTime() {
@@ -44,5 +44,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(data: AppModel.testData)
+    ChartView(data: AppModel.testData)
 }
