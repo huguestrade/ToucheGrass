@@ -12,13 +12,15 @@ struct ListView: View {
     var data: [AppModel]
     
     var body: some View {
-        VStack {
-            Text("Application Time")
+        VStack(alignment: .leading) {
+            Text("Temps d'utilisation")
+                .padding(.leading, 20.0)
             List {
                 ForEach(data) {app in RowView(app: app)}
             }
             .listStyle(PlainListStyle())
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

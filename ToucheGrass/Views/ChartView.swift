@@ -25,6 +25,10 @@ struct ChartView: View {
     
     var body: some View {
         VStack {
+            Text("Touch Grass")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
             Chart(Array(categoryTime), id: \.key) {key, value in
                 SectorMark(
                     angle: .value("Time", value),
@@ -36,7 +40,7 @@ struct ChartView: View {
                     by: .value("category", key)
                 )
             }
-            
+            .chartLegend(alignment: .bottom)
         }
         .padding()
         .onAppear(perform: groupByCategoryTime)
